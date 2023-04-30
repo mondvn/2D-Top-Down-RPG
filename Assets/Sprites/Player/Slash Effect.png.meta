@@ -43,11 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> eea94c6 (16. Sword Visual Feedback)
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,9 +117,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Slash Effect_0
@@ -140,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d5f411adc81455a8acb277577ff42c
-      internalID: -2126075712
+      spriteID: e477f111323084587974809b17587178
+      internalID: 1228527999
       vertices: []
       indices: 
       edges: []
@@ -161,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bea91ad5ca03347aa86b909a0403c1fd
-      internalID: 709732809
+      spriteID: c55fd42151080457da5805db0ac82da2
+      internalID: -1855258872
       vertices: []
       indices: 
       edges: []
@@ -182,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b644f26d7b3e648079db32c782cdad23
-      internalID: -1273491061
+      spriteID: 0b73ac97dbbc34eaea85cf7e49bedaa8
+      internalID: 1530670095
       vertices: []
       indices: 
       edges: []
@@ -203,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbaf8f028009f4e7aba33a4c751b79c1
-      internalID: 1008799530
+      spriteID: 28ca63b8cccb44ae8b36263db57b1d13
+      internalID: 1888317173
       vertices: []
       indices: 
       edges: []
@@ -224,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b304cdad9b3134cbd9e5fb840c09b85a
-      internalID: -945458121
+      spriteID: 8bbd82ebbb15841138b35646527465b7
+      internalID: 16069009
       vertices: []
       indices: 
       edges: []
@@ -245,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bddf0bc8c76b4b6ca6d28016c667c8f
-      internalID: -810117195
+      spriteID: 17d6751829b23443797e66e7dfb09210
+      internalID: 607480985
       vertices: []
       indices: 
       edges: []
@@ -266,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64f02d4fecb4d4eecb6c5433288bff6c
-      internalID: -1545979058
+      spriteID: 23888777a1a984db4914a59cba6c7de8
+      internalID: 142151775
       vertices: []
       indices: 
       edges: []
@@ -287,8 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feba0301ffab24a2883f6ad3b19f8fd7
-      internalID: -1447967537
+      spriteID: 51f956147ac574c77a7ebd79a44ce877
+      internalID: 907102095
       vertices: []
       indices: 
       edges: []
@@ -308,13 +301,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b38181264194f4763875543a1e1eba11
-      internalID: 1252714141
+      spriteID: 043036f88c9344ac499a305436d13a2c
+      internalID: 1407917359
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> eea94c6 (16. Sword Visual Feedback)
     outline: []
     physicsShape: []
     bones: []
@@ -325,20 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Slash Effect_0: -2126075712
-      Slash Effect_1: 709732809
-      Slash Effect_2: -1273491061
-      Slash Effect_3: 1008799530
-      Slash Effect_4: -945458121
-      Slash Effect_5: -810117195
-      Slash Effect_6: -1545979058
-      Slash Effect_7: -1447967537
-      Slash Effect_8: 1252714141
->>>>>>> eea94c6 (16. Sword Visual Feedback)
+      Slash Effect_0: 1228527999
+      Slash Effect_1: -1855258872
+      Slash Effect_2: 1530670095
+      Slash Effect_3: 1888317173
+      Slash Effect_4: 16069009
+      Slash Effect_5: 607480985
+      Slash Effect_6: 142151775
+      Slash Effect_7: 907102095
+      Slash Effect_8: 1407917359
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

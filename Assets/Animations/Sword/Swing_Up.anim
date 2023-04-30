@@ -27,59 +27,34 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: {x: 2.2, y: 2, z: 266}
-        inSlope: {x: -20.799997, y: 17.055998, z: 793}
-        outSlope: {x: -20.799997, y: 17.055998, z: 793}
-=======
         time: 0.055555556
         value: {x: 2.2, y: 2, z: 266}
         inSlope: {x: -28.799997, y: 23.616, z: 1098}
         outSlope: {x: -28.799997, y: 23.616, z: 1098}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-        value: {x: -1.4, y: 2.656, z: 341}
-        inSlope: {x: -29.900003, y: 0, z: 1092.0001}
-        outSlope: {x: -29.900003, y: 0, z: 1092.0001}
-=======
         time: 0.11111111
         value: {x: -1.4, y: 2.656, z: 341}
         inSlope: {x: -41.399998, y: 0, z: 1511.9999}
         outSlope: {x: -41.399998, y: 0, z: 1511.9999}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-        value: {x: -2.55, y: -1.58, z: 434}
-        inSlope: {x: 0, y: 0, z: 987.99994}
-        outSlope: {x: 0, y: 0, z: 987.99994}
-=======
         time: 0.16666667
         value: {x: -2.55, y: -1.58, z: 434}
         inSlope: {x: 0, y: 0, z: 1368}
         outSlope: {x: 0, y: 0, z: 1368}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: {x: 0, y: 0, z: 493}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -105,59 +80,34 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: {x: 0.66, y: -0.35, z: 0}
-        inSlope: {x: 6.9549994, y: 0, z: 0}
-        outSlope: {x: 6.9549994, y: 0, z: 0}
-=======
         time: 0.055555556
         value: {x: 0.66, y: -0.35, z: 0}
         inSlope: {x: 9.629999, y: 0, z: 0}
         outSlope: {x: 9.629999, y: 0, z: 0}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-        value: {x: 0.95, y: 0, z: 0}
-        inSlope: {x: 0, y: 7.2800007, z: 0}
-        outSlope: {x: 0, y: 7.2800007, z: 0}
-=======
         time: 0.11111111
         value: {x: 0.95, y: 0, z: 0}
         inSlope: {x: 0, y: 10.079999, z: 0}
         outSlope: {x: 0, y: 10.079999, z: 0}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-        value: {x: 0.77, y: 0.77, z: 0}
-        inSlope: {x: -4.095, y: 2.34, z: 0}
-        outSlope: {x: -4.095, y: 2.34, z: 0}
-=======
         time: 0.16666667
         value: {x: 0.77, y: 0.77, z: 0}
         inSlope: {x: -5.67, y: 3.2400002, z: 0}
         outSlope: {x: -5.67, y: 3.2400002, z: 0}
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: {x: 0.32, y: 0.86, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -172,11 +122,7 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
-<<<<<<< HEAD
-  m_SampleRate: 130
-=======
   m_SampleRate: 180
->>>>>>> eea94c6 (16. Sword Visual Feedback)
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -207,11 +153,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-<<<<<<< HEAD
-    m_StopTime: 0.30769232
-=======
     m_StopTime: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -241,27 +183,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: 0.66
-        inSlope: 6.9549994
-        outSlope: 6.9549994
-=======
         time: 0.055555556
         value: 0.66
         inSlope: 9.629999
         outSlope: 9.629999
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-=======
         time: 0.11111111
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0.95
         inSlope: 0
         outSlope: 0
@@ -270,27 +201,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-        value: 0.77
-        inSlope: -4.095
-        outSlope: -4.095
-=======
         time: 0.16666667
         value: 0.77
         inSlope: -5.67
         outSlope: -5.67
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0.32
         inSlope: 0
         outSlope: 0
@@ -320,11 +240,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-=======
         time: 0.055555556
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: -0.35
         inSlope: 0
         outSlope: 0
@@ -333,43 +249,25 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-        value: 0
-        inSlope: 7.2800007
-        outSlope: 7.2800007
-=======
         time: 0.11111111
         value: 0
         inSlope: 10.079999
         outSlope: 10.079999
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-        value: 0.77
-        inSlope: 2.34
-        outSlope: 2.34
-=======
         time: 0.16666667
         value: 0.77
         inSlope: 3.2400002
         outSlope: 3.2400002
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0.86
         inSlope: 0
         outSlope: 0
@@ -399,11 +297,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-=======
         time: 0.055555556
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -412,11 +306,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-=======
         time: 0.11111111
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -425,11 +315,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-=======
         time: 0.16666667
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -438,11 +324,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -472,43 +354,25 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: 2.2
-        inSlope: -20.799997
-        outSlope: -20.799997
-=======
         time: 0.055555556
         value: 2.2
         inSlope: -28.799997
         outSlope: -28.799997
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-        value: -1.4
-        inSlope: -29.900003
-        outSlope: -29.900003
-=======
         time: 0.11111111
         value: -1.4
         inSlope: -41.399998
         outSlope: -41.399998
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-=======
         time: 0.16666667
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: -2.55
         inSlope: 0
         outSlope: 0
@@ -517,11 +381,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -551,27 +411,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: 2
-        inSlope: 17.055998
-        outSlope: 17.055998
-=======
         time: 0.055555556
         value: 2
         inSlope: 23.616
         outSlope: 23.616
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-=======
         time: 0.11111111
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 2.656
         inSlope: 0
         outSlope: 0
@@ -580,11 +429,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-=======
         time: 0.16666667
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: -1.58
         inSlope: 0
         outSlope: 0
@@ -593,11 +438,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 0
         inSlope: 0
         outSlope: 0
@@ -627,59 +468,34 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.07692308
-        value: 266
-        inSlope: 793
-        outSlope: 793
-=======
         time: 0.055555556
         value: 266
         inSlope: 1098
         outSlope: 1098
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.15384616
-        value: 341
-        inSlope: 1092.0001
-        outSlope: 1092.0001
-=======
         time: 0.11111111
         value: 341
         inSlope: 1511.9999
         outSlope: 1511.9999
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.23076923
-        value: 434
-        inSlope: 987.99994
-        outSlope: 987.99994
-=======
         time: 0.16666667
         value: 434
         inSlope: 1368
         outSlope: 1368
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-<<<<<<< HEAD
-        time: 0.30769232
-=======
         time: 0.22222222
->>>>>>> eea94c6 (16. Sword Visual Feedback)
         value: 493
         inSlope: 0
         outSlope: 0
@@ -734,9 +550,6 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-<<<<<<< HEAD
-  m_Events: []
-=======
   m_Events:
   - time: 0
     functionName: SwingUpFlipAnim
@@ -745,4 +558,3 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
->>>>>>> eea94c6 (16. Sword Visual Feedback)

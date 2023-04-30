@@ -16,10 +16,10 @@ public class Sword : MonoBehaviour
 
     private void Awake()
     {
-        this.playerControls = new PlayerControls();
-        myAnimator = GetComponent<Animator>();
         playerController = GetComponentInParent<PlayerController>();
         activeWeapon = GetComponentInParent<ActiveWeapon>();
+        myAnimator = GetComponent<Animator>();
+        playerControls = new PlayerControls();
     }
 
     private void OnEnable()
@@ -27,7 +27,7 @@ public class Sword : MonoBehaviour
         playerControls.Enable();
     }
 
-    private void Start()
+    void Start()
     {
         playerControls.Combat.Attack.started += _ => Attack();
     }
@@ -43,12 +43,11 @@ public class Sword : MonoBehaviour
 
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);
         slashAnim.transform.parent = this.transform.parent;
-
     }
 
     public void SwingUpFlipAnim()
     {
-        slashAnim.transform.rotation = Quaternion.Euler(-180, 0, 0);
+        slashAnim.gameObject.transform.rotation = Quaternion.Euler(-180, 0, 0);
 
         if (playerController.FacingLeft)
         {
@@ -65,7 +64,6 @@ public class Sword : MonoBehaviour
             slashAnim.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
-
 
     private void MouseFollowWithOffset()
     {
