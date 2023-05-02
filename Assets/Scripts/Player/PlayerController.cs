@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
 
     [SerializeField] private float moveSpeed = 1f;
 
@@ -15,42 +14,43 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer mySpriteRender;
 
     private bool facingLeft = false;
+    public bool FacingLeft => facingLeft;
 
     private void Awake()
     {
-        playerControls = new PlayerControls();
-        rb = GetComponent<Rigidbody2D>();
-        myAnimator = GetComponent<Animator>();
-        mySpriteRender = GetComponent<SpriteRenderer>();
+        this.playerControls = new PlayerControls();
+        this.rb = GetComponent<Rigidbody2D>();
+        this.myAnimator = GetComponent<Animator>();
+        this.mySpriteRender = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
     {
-        playerControls.Enable();
+        this.playerControls.Enable();
     }
 
     private void Update()
     {
-        PlayerInput();
+        this.PlayerInput();
     }
 
     private void FixedUpdate()
     {
-        AdjustPlayerFacingDirection();
-        Move();
+        this.AdjustPlayerFacingDirection();
+        this.Move();
     }
 
     private void PlayerInput()
     {
-        movement = playerControls.Movement.Move.ReadValue<Vector2>();
+        this.movement = this.playerControls.Movement.Move.ReadValue<Vector2>();
 
-        myAnimator.SetFloat("moveX", movement.x);
-        myAnimator.SetFloat("moveY", movement.y);
+        this.myAnimator.SetFloat("moveX", this.movement.x);
+        this.myAnimator.SetFloat("moveY", this.movement.y);
     }
 
     private void Move()
     {
-        rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
+        this.rb.MovePosition(this.rb.position + this.movement * (this.moveSpeed * Time.fixedDeltaTime));
     }
 
     private void AdjustPlayerFacingDirection()
@@ -60,13 +60,13 @@ public class PlayerController : MonoBehaviour
 
         if (mousePos.x < playerScreenPoint.x)
         {
-            mySpriteRender.flipX = true;
-            FacingLeft = true;
+            this.mySpriteRender.flipX = true;
+            this.facingLeft = true;
         }
         else
         {
-            mySpriteRender.flipX = false;
-            FacingLeft = false;
+            this.mySpriteRender.flipX = false;
+            this.facingLeft = false;
         }
     }
 }
