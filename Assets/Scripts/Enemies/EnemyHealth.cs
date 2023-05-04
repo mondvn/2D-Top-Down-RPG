@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int staringHealth = 3;
     [SerializeField] private int currentHealth = 1;
+    [SerializeField] private GameObject deathVFXPrefab;
     private KnockBack knockBack;
     private Flash flash;
 
@@ -36,6 +37,10 @@ public class EnemyHealth : MonoBehaviour
 
     private void DetectDeath()
     {
-        if (this.currentHealth <= 0) Destroy(gameObject);
+        if (this.currentHealth <= 0)
+        {
+            Instantiate(this.deathVFXPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 }
