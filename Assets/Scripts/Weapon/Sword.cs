@@ -7,11 +7,13 @@ public class Sword : MonoBehaviour
     [SerializeField] private GameObject slashAnimPrefab;
     [SerializeField] private Transform slashAnimSpawnPoint;
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private float swordAttackCD = 0.5f;
 
     private PlayerControls playerControls;
     private Animator myAnimator;
     private PlayerController playerController;
     private ActiveWeapon activeWeapon;
+    private bool attackButtonDown, isAttacking = false;
 
     private GameObject slashAnim;
 
@@ -30,21 +32,45 @@ public class Sword : MonoBehaviour
 
     void Start()
     {
-        this.playerControls.Combat.Attack.started += _ => this.Attack();
+        this.playerControls.Combat.Attack.started += _ => this.StartAttacking();
+        this.playerControls.Combat.Attack.canceled += _ => this.StopAttacking();
     }
 
     private void Update()
     {
         this.MouseFollowWithOffset();
+        this.Attack();
+    }
+
+    private void StartAttacking()
+    {
+        this.attackButtonDown = true;
+    }
+
+    private void StopAttacking()
+    {
+        this.attackButtonDown = false;
     }
 
     private void Attack()
     {
-        this.myAnimator.SetTrigger("Attack");
-        this.weaponCollider.gameObject.SetActive(true);
+        // if (!this.attackButtonDown && this.isAttacking) return;
+        if (this.attackButtonDown && !this.isAttacking)
+        {
+            this.isAttacking = true;
+            this.myAnimator.SetTrigger("Attack");
+            this.weaponCollider.gameObject.SetActive(true);
 
-        this.slashAnim = Instantiate(this.slashAnimPrefab, this.slashAnimSpawnPoint.position, Quaternion.identity);
-        this.slashAnim.transform.parent = this.transform.parent;
+            this.slashAnim = Instantiate(this.slashAnimPrefab, this.slashAnimSpawnPoint.position, Quaternion.identity);
+            this.slashAnim.transform.parent = this.transform.parent;
+            StartCoroutine(AttackCDRoutine());
+        }
+    }
+
+    private IEnumerator AttackCDRoutine()
+    {
+        yield return new WaitForSeconds(this.swordAttackCD);
+        this.isAttacking = false;
     }
 
     public void DoneAttackingAnimEvent()
