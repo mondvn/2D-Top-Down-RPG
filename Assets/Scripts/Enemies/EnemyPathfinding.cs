@@ -8,10 +8,12 @@ public class EnemyPathfinding : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveDir;
+    private KnockBack knockBack;
 
     private void Awake()
     {
         this.rb = GetComponent<Rigidbody2D>();
+        this.knockBack = GetComponent<KnockBack>();
     }
 
     private void FixedUpdate()
@@ -21,6 +23,8 @@ public class EnemyPathfinding : MonoBehaviour
 
     private void Move()
     {
+        if (knockBack.gettingKnockedBack) return;
+
         this.rb.MovePosition(this.rb.position + this.moveDir * (this.moveSpeed * Time.fixedDeltaTime));
     }
 
