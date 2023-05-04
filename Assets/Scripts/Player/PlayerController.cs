@@ -6,14 +6,21 @@ public class PlayerController : MonoBehaviour
 {
     private static PlayerController instance;
     public static PlayerController Instance => instance;
-    [SerializeField] private float moveSpeed = 1f;
+
+    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float dashSpeed = 4f;
+    [SerializeField] private float dashTime = .2f;
+    [SerializeField] private float dashCD = .25f;
+    [SerializeField] private TrailRenderer myTrailRenderer;
 
     private PlayerControls playerControls;
-    private Vector2 movement;
     private Rigidbody2D rb;
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
 
+
+    private Vector2 movement;
+    private bool isDashing = false;
     private bool facingLeft = false;
     public bool FacingLeft => facingLeft;
 
@@ -30,6 +37,11 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         this.playerControls.Enable();
+    }
+
+    private void Start()
+    {
+        this.playerControls.Combat.Dash.performed += _ => this.Dash();
     }
 
     private void Update()
@@ -71,5 +83,27 @@ public class PlayerController : MonoBehaviour
             this.mySpriteRender.flipX = false;
             this.facingLeft = false;
         }
+    }
+
+    private void Dash()
+    {
+        if (isDashing) return;
+
+        this.isDashing = true;
+        this.moveSpeed *= this.dashSpeed;
+        this.myTrailRenderer.emitting = true;
+        StartCoroutine(EndDashRoutine());
+    }
+
+    private IEnumerator EndDashRoutine()
+    {
+        yield return new WaitForSeconds(this.dashTime);
+        this.moveSpeed /= this.dashSpeed;
+        this.myTrailRenderer.emitting = false;
+
+        yield return new WaitForSeconds(this.dashCD);
+        this.isDashing = false;
+
+
     }
 }
