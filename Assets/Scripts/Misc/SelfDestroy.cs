@@ -13,10 +13,10 @@ public class SelfDestroy : MonoBehaviour
 
     private void Update()
     {
-        if (this.ps && !this.ps.IsAlive()) DestroySelf();
+        if (this.ps && !this.ps.IsAlive()) DestroySelfAnimEvent();
     }
 
-    public void DestroySelf()
+    public void DestroySelfAnimEvent()
     {
         if (gameObject != null) Destroy(gameObject);
     }

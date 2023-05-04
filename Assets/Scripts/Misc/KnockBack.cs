@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class KnockBack : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    public bool gettingKnockedBack = false;
     [SerializeField] private float knockBackTime = 0.2f;
+
+    private Rigidbody2D rb;
+
+    private bool gettingKnockedBack = false;
+    public bool GettingKnockedBack => gettingKnockedBack;
+
     private void Awake()
     {
         this.rb = GetComponent<Rigidbody2D>();
@@ -19,7 +23,6 @@ public class KnockBack : MonoBehaviour
         this.rb.AddForce(difference, ForceMode2D.Impulse);
 
         StartCoroutine(KnockRoutine());
-
     }
 
     private IEnumerator KnockRoutine()

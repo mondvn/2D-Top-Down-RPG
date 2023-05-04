@@ -23,7 +23,7 @@ public class EnemyPathfinding : MonoBehaviour
 
     private void Move()
     {
-        if (knockBack.gettingKnockedBack) return;
+        if (this.knockBack.GettingKnockedBack) return;
 
         this.rb.MovePosition(this.rb.position + this.moveDir * (this.moveSpeed * Time.fixedDeltaTime));
     }

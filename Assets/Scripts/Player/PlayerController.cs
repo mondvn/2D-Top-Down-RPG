@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
 
     private Vector2 movement;
+    private float startingMoveSpeed;
     private bool isDashing = false;
     private bool facingLeft = false;
     public bool FacingLeft => facingLeft;
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        this.startingMoveSpeed = this.moveSpeed;
         this.playerControls.Combat.Dash.performed += _ => this.Dash();
     }
 
@@ -98,12 +100,10 @@ public class PlayerController : MonoBehaviour
     private IEnumerator EndDashRoutine()
     {
         yield return new WaitForSeconds(this.dashTime);
-        this.moveSpeed /= this.dashSpeed;
+        this.moveSpeed = this.startingMoveSpeed;
         this.myTrailRenderer.emitting = false;
 
         yield return new WaitForSeconds(this.dashCD);
         this.isDashing = false;
-
-
     }
 }
