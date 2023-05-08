@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
-    private static PlayerController instance;
-    public static PlayerController Instance => instance;
-
     [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private float dashTime = .2f;
@@ -25,9 +22,9 @@ public class PlayerController : MonoBehaviour
     private bool facingLeft = false;
     public bool FacingLeft => facingLeft;
 
-    private void Awake()
+    protected override void Awake()
     {
-        if (instance == null) instance = this;
+        base.Awake();
 
         this.playerControls = new PlayerControls();
         this.rb = GetComponent<Rigidbody2D>();
