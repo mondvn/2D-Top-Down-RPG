@@ -2031,6 +2031,7 @@ MonoBehaviour:
   dashTime: 0.2
   dashCD: 0.25
   myTrailRenderer: {fileID: 2068300298}
+  weaponCollider: {fileID: 1175828320}
 --- !u!50 &862539681
 Rigidbody2D:
   serializedVersion: 4

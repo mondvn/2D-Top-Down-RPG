@@ -9,6 +9,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float dashTime = .2f;
     [SerializeField] private float dashCD = .25f;
     [SerializeField] private TrailRenderer myTrailRenderer;
+    [SerializeField] private Transform weaponCollider;
 
     private PlayerControls playerControls;
     private Rigidbody2D rb;
@@ -52,6 +53,11 @@ public class PlayerController : Singleton<PlayerController>
     {
         this.AdjustPlayerFacingDirection();
         this.Move();
+    }
+
+    public Transform GetWeaponCollider()
+    {
+        return this.weaponCollider;
     }
 
     private void PlayerInput()
