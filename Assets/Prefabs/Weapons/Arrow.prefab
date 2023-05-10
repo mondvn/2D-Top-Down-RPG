@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015235097, y: 0.045705874}
-  m_Size: {x: 0.7867065, y: 0.5124763}
+  m_Offset: {x: 0.015235093, y: 0.026569163}
+  m_Size: {x: 0.7867065, y: 0.41679382}
   m_Direction: 1
 --- !u!50 &3532445942483710847
 Rigidbody2D:
@@ -149,7 +149,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!96 &4127942903840026116
 TrailRenderer:
@@ -289,3 +289,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 22
+  particleOnHitPrefabVFX: {fileID: 8156215090439266311, guid: d40c23b1f56024b5cb986c782a41ec2e, type: 3}
