@@ -678,6 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218881525}
   - component: {fileID: 218881526}
+  - component: {fileID: 218881527}
   m_Layer: 0
   m_Name: Active Weapon
   m_TagString: Untagged
@@ -714,6 +715,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentActiveWeapon: {fileID: 0}
+--- !u!114 &218881527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218881524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926d8c9f77ac647078bb9acdc7eae51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221252686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,7 +2414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936856313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0.34, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0.227, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7602,9 +7615,9 @@ PolygonCollider2D:
       - {x: -0.100658655, y: 1.8555989}
       - {x: 0.693036, y: 0.32579342}
       - {x: 0.18393165, y: -0.288947}
-      - {x: -0.18393147, y: -0.74191105}
-      - {x: 0.7818692, y: -0.674433}
-      - {x: 1.3403926, y: -0.45911562}
+      - {x: -0.10582554, y: -0.9241544}
+      - {x: 0.8426182, y: -0.7959292}
+      - {x: 1.3317142, y: -0.43308032}
       - {x: 1.6556675, y: 0.29224068}
   m_UseDelaunayMesh: 0
 --- !u!114 &1175828322
