@@ -48,11 +48,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         this.currentActiveWeapon = null;
     }
 
-    // public void ToggleIsAttacking(bool value)
-    // {
-    //     this.isAttacking = value;
-    // }
-
     private void AttackCooldown()
     {
         this.isAttacking = true;
@@ -63,7 +58,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     private IEnumerator TimeBetweenAttacksRoutine()
     {
         yield return new WaitForSeconds(this.timeBetweenAttacks);
-        isAttacking = false;
+        this.isAttacking = false;
     }
 
     private void StartAttacking()
