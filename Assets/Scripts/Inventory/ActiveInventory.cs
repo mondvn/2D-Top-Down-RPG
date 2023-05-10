@@ -27,14 +27,16 @@ public class ActiveInventory : MonoBehaviour
     {
         if (numValue - 1 == this.activeSlotIndexNum) return;
 
-        this.DeactiveAllHighlight();
         this.ToggleActiveHighlight(numValue - 1);
     }
 
     private void ToggleActiveHighlight(int indexNum)
     {
         this.activeSlotIndexNum = indexNum;
+        this.DeactiveAllHighlight();
+
         transform.GetChild(indexNum).GetChild(0).gameObject.SetActive(true);
+        this.ChangeActiveWeapon();
     }
 
     private void DeactiveAllHighlight()
@@ -43,5 +45,10 @@ public class ActiveInventory : MonoBehaviour
         {
             inventorySlot.GetChild(0).gameObject.SetActive(false);
         }
+    }
+
+    private void ChangeActiveWeapon()
+    {
+        Debug.Log(transform.GetChild(activeSlotIndexNum).GetComponent<InventorySlot>().GetWeaponInfo().weaponPrefab.name);
     }
 }
