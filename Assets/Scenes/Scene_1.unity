@@ -2133,6 +2133,9 @@ GameObject:
   - component: {fileID: 862539683}
   - component: {fileID: 862539684}
   - component: {fileID: 862539685}
+  - component: {fileID: 862539688}
+  - component: {fileID: 862539687}
+  - component: {fileID: 862539686}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2324,6 +2327,48 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &862539686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862539678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f77a755338b4213815275b22ba717d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 9bcf20a7b06ae49ebbacdee9f8544cc0, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &862539687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862539678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b266f6b8c0c486c8f53e434613d91c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &862539688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862539678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819c4bdd824024915a36979a39e2370a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  knockBackThurstAmounth: 5
+  damageRecoveryTime: 1
 --- !u!4 &877544252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 10179987359435615, guid: cbfc057d7cdf44cd7a46d101674d2105, type: 3}
@@ -23153,7 +23198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13e0dea5050748fb874a7a4fb068db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparencyAmount: 0.871
+  transparencyAmount: 0.86
   fadeTime: 0.35
 --- !u!19719996 &1364686356
 TilemapCollider2D:

@@ -15,6 +15,7 @@ public class PlayerController : Singleton<PlayerController>
     private Rigidbody2D rb;
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
+    private KnockBack knockBack;
 
 
     private Vector2 movement;
@@ -31,6 +32,7 @@ public class PlayerController : Singleton<PlayerController>
         this.rb = GetComponent<Rigidbody2D>();
         this.myAnimator = GetComponent<Animator>();
         this.mySpriteRender = GetComponent<SpriteRenderer>();
+        this.knockBack = GetComponent<KnockBack>();
     }
 
     private void OnEnable()
@@ -70,6 +72,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
+        if (this.knockBack.GettingKnockedBack) return;
+
         this.rb.MovePosition(this.rb.position + this.movement * (this.moveSpeed * Time.fixedDeltaTime));
     }
 
