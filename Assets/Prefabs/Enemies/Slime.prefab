@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staringHealth: 3
   currentHealth: 1
-  knockBackThrust: 15
+  knockBackThrust: 5
   deathVFXPrefab: {fileID: 8156215090439266311, guid: 7e9f3442875c9410aac0dbd3c3bed9e7, type: 3}
 --- !u!114 &3487900425621628302
 MonoBehaviour:
