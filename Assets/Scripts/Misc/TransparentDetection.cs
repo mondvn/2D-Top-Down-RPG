@@ -55,7 +55,7 @@ public class TransparentDetection : MonoBehaviour
         while (elapseTime < fadeTime)
         {
             elapseTime += Time.deltaTime;
-            float newAlpha = Mathf.Lerp(startValue, targetTransparency, elapseTime / fadeTime);
+            float newAlpha = Mathf.Lerp(startValue, targetTransparency, elapseTime / this.fadeTime);
             this.spriteRenderer.color = new Color(this.spriteRenderer.color.r, this.spriteRenderer.color.g, this.spriteRenderer.color.b, newAlpha);
             yield return null;
         }
