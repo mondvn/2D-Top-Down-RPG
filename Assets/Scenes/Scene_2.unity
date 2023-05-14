@@ -293,6 +293,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: stagger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: oscillate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

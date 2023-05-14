@@ -13,9 +13,23 @@ public class Shooter : MonoBehaviour, IEnemy
     [SerializeField] private float timeBetweenBursts = 0.3f;
     [SerializeField] private float resetTime = 0.5f;
     [SerializeField] private bool stagger;
+    [Tooltip("Stagger has to be enabled for oscillate to work perperly")]
     [SerializeField] private bool oscillate;
 
     private bool isShooting = false;
+
+    private void OnValidate()
+    {
+        if (this.oscillate) this.stagger = true;
+        if (!this.oscillate) this.stagger = false;
+        if (this.bulletMoveSpeed <= 0) this.bulletMoveSpeed = 0.1f;
+        if (this.burstCount < 1) this.burstCount = 1;
+        if (this.projectilesPerBurst < 1) this.projectilesPerBurst = 1;
+        if (this.angleSpread == 0) this.projectilesPerBurst = 1;
+        if (this.startingDistance < 0.1f) this.startingDistance = 0.1f;
+        if (this.timeBetweenBursts < 0.1f) this.timeBetweenBursts = 0.1f;
+        if (this.resetTime < 0.1f) this.resetTime = 0.1f;
+    }
 
     public void Attack()
     {
