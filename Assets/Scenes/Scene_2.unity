@@ -18446,6 +18446,7 @@ GameObject:
   - component: {fileID: 1676262585}
   - component: {fileID: 1676262584}
   - component: {fileID: 1676262583}
+  - component: {fileID: 1676262588}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -28049,6 +28050,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1676262588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676262581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787dacb5665244e2aab6fc64369e52ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1730147333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 10179987359435615, guid: cbfc057d7cdf44cd7a46d101674d2105, type: 3}
@@ -55903,6 +55916,42 @@ PrefabInstance:
     - target: {fileID: 5535183279933573313, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
       propertyPath: m_Name
       value: Ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: stagger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: oscillate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: resetTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: burstCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: angleSpread
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: bulletMoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: startingDistance
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: timeBetweenBursts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800148099294058821, guid: 66646a3368ad44f3f8bc11d9ba5ccda0, type: 3}
+      propertyPath: projectilesPerBurst
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
