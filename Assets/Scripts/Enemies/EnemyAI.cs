@@ -80,7 +80,7 @@ public class EnemyAI : MonoBehaviour
             this.canAttack = false;
             (enemyType as IEnemy).Attack();
 
-            if (stopMovingWhiteAttacking)
+            if (this.stopMovingWhiteAttacking)
             {
                 this.enemyPathfinding.StopMoving();
             }
