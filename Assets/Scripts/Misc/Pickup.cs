@@ -7,19 +7,26 @@ public class Pickup : MonoBehaviour
     [SerializeField] private float pickupDistance = 5f;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float accelartionRate = 5f;
+    [SerializeField] private AnimationCurve animCurve;
+    [SerializeField] private float heightY = 1.5f;
+    [SerializeField] private float popDuration = 1f;
 
     private Vector3 moveDir;
     private Rigidbody2D rb;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        this.rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        StartCoroutine(AnimCurveSpawnRoutine());
     }
 
     private void Update()
     {
         this.CheckDistance();
-        // this.rb.velocity = moveDir * moveSpeed * Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -49,5 +56,27 @@ public class Pickup : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private IEnumerator AnimCurveSpawnRoutine()
+    {
+        Vector2 startPos = transform.position;
+        float randomX = transform.position.x + Random.Range(-2f, 2f);
+        float randomY = transform.position.y + Random.Range(-1f, 1f);
+        Vector2 endPos = new Vector2(randomX, randomY);
+
+        float timePassed = 0f;
+
+        while (timePassed < this.popDuration)
+        {
+            timePassed += Time.deltaTime;
+            float linearT = timePassed / this.popDuration;
+            float heightT = this.animCurve.Evaluate(linearT);
+            float height = Mathf.Lerp(0f, this.heightY, heightT);
+
+            transform.position = Vector2.Lerp(startPos, endPos, linearT) + new Vector2(0f, height);
+            yield return null;
+        }
+
     }
 }
