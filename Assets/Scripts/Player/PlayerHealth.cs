@@ -16,13 +16,14 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private KnockBack knockBack;
     private Flash flash;
+    const string HEALTH_SLDIDER_TEXT = "Heart Slider";
 
     protected override void Awake()
     {
         base.Awake();
         this.flash = GetComponent<Flash>();
         this.knockBack = GetComponent<KnockBack>();
-        this.healthSlider = GameObject.Find("Heart Slider").GetComponent<Slider>();
+        this.healthSlider = GameObject.Find(HEALTH_SLDIDER_TEXT).GetComponent<Slider>();
     }
 
     private void Start()
@@ -71,8 +72,6 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void UpdateHealthSlider()
     {
-        // if (this.healthSlider == null) return;
-
         this.healthSlider.maxValue = maxHealth;
         this.healthSlider.value = currentHealth;
     }
