@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Yellow
+  m_Name: Stamina Globe
   m_Shader: {fileID: -6465566751694194690, guid: 25611a7b830f447fd9d8a2635cacfff8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 5.05716, g: 5.6603775, b: 2.0558918, a: 0}
+    - _Color: {r: 1.6176975, g: 1.9745624, b: 0.71717596, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7194531679354024420
 MonoBehaviour:
