@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7522034255776894148
+--- !u!1 &8869328312519837773
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3533701025065191628}
-  - component: {fileID: 4558430389343673434}
-  - component: {fileID: 451456144847105363}
-  - component: {fileID: 2918835437167080513}
-  - component: {fileID: -8458325181050531464}
+  - component: {fileID: 3032514836602387417}
+  - component: {fileID: 4354124926034192689}
+  - component: {fileID: 1887545514929530932}
+  - component: {fileID: 2768189768981508521}
+  - component: {fileID: 8143119112245104283}
   m_Layer: 0
-  m_Name: Grape Projectile
+  m_Name: Grape Projectile Splatter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3533701025065191628
+--- !u!4 &3032514836602387417
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522034255776894148}
+  m_GameObject: {fileID: 8869328312519837773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4558430389343673434
+--- !u!212 &4354124926034192689
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522034255776894148}
+  m_GameObject: {fileID: 8869328312519837773}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,52 +75,25 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cfc04b6853cea4cab82f8ecd23f6ef65, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fe6817948cd7a461586c49bccd81fbe0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &451456144847105363
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!70 &1887545514929530932
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522034255776894148}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!58 &2918835437167080513
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522034255776894148}
+  m_GameObject: {fileID: 8869328312519837773}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -146,45 +119,31 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.32
---- !u!114 &-8458325181050531464
+  m_Offset: {x: 0.059342086, y: -0.05934201}
+  m_Size: {x: 1.1098695, y: 0.69447464}
+  m_Direction: 1
+--- !u!114 &2768189768981508521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522034255776894148}
+  m_GameObject: {fileID: 8869328312519837773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 680013205b46944aab386f16a1934033, type: 3}
+  m_Script: {fileID: 11500000, guid: b004a59bc73544bb78b833277ed0a5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
-  animCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.99166465
-      value: 0.014131373
-      inSlope: -1.8753508
-      outSlope: -1.8753508
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.06722498
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  heightY: 5.5
-  grapeProjectileShadow: {fileID: 9172786098141296873, guid: 2c3903c6d3c0141069bba54074edaee1, type: 3}
+  fadeTime: 0.6
+--- !u!114 &8143119112245104283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869328312519837773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea39e2b3f0374788a80bf212e565628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
