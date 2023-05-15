@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4391402184367896524}
   - component: {fileID: 1609614267105712788}
   - component: {fileID: 7800148099294058821}
+  - component: {fileID: 469715233094855621}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -352,11 +353,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2255106679111123566, guid: 71ea49629bdbf40988912e0506fd824f, type: 3}
   bulletMoveSpeed: 6
-  burstCount: 5
-  projectilesPerBurst: 6
-  angleSpread: 160
-  startingDistance: 0.1
-  timeBetweenBursts: 0.3
+  burstCount: 8
+  projectilesPerBurst: 8
+  angleSpread: 145
+  startingDistance: 0.3
+  timeBetweenBursts: 1
   resetTime: 0.5
-  stagger: 0
-  oscillate: 0
+  stagger: 1
+  oscillate: 1
+--- !u!114 &469715233094855621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535183279933573313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fae2cebdd1974d77b7cc21e6781289c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoinPrefab: {fileID: 4631630954006757995, guid: 1ba097766d2b84296aca91bf9625e84e, type: 3}
+  healthGlobe: {fileID: 4631630954006757995, guid: 044827133c7e04fa8ae9423ebfa04d0e, type: 3}
+  staminaGlobe: {fileID: 4631630954006757995, guid: 46046c8e674134685a15a244f3f73d8c, type: 3}
